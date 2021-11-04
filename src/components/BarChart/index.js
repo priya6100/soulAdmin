@@ -12,11 +12,11 @@ const BarChart = (props) => {
     const product = useSelector(state => state.product);
     const order = useSelector(state => state.order);
     console.log(order.orders._id, ">>chart");
-    const baseUrl =  "https://soulbackend.herokuapp.com";
+  
     const chart = () =>{
         let odId = [];
         let odName = [];
-        axios.post(`${baseUrl}/api/initialdata`)
+        axios.post(`http://localhost:7000/api/initialdata`)
         .then(res =>{
             console.log(res, ">>res");
             for(const dataObj of res.data.orders){

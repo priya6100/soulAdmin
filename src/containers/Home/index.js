@@ -61,7 +61,7 @@ const Home = (props) => {
   const categoryLength = category.categories.length;
   const productLength = product.products.length;
   const orderLength = order.orders.length;
-  const baseUrl =  "https://soulbackend.herokuapp.com";
+
   console.log(category, product, order, "this state");
 
   let chartInstance = null;
@@ -70,7 +70,7 @@ const Home = (props) => {
     let odId = [];
     let odName = [];
     axios
-      .post(`${baseUrl}/api/initialdata`)
+      .post(`http://localhost:7000/api/initialdata`)
       .then((res) => {
         console.log(res, ">>res");
         for (const dataObj of res.data.orders) {
