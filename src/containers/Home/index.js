@@ -70,7 +70,7 @@ const Home = (props) => {
     let odId = [];
     let odName = [];
     axios
-      .post(`http://localhost:7000/api/initialdata`)
+      .post(`https://soulbackend.herokuapp.com/api/initialdata`)
       .then((res) => {
         console.log(res, ">>res");
         for (const dataObj of res.data.orders) {
