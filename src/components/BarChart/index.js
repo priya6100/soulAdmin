@@ -12,7 +12,7 @@ const BarChart = (props) => {
     const product = useSelector(state => state.product);
     const order = useSelector(state => state.order);
     console.log(order.orders._id, ">>chart");
-  
+    const baseUrl =  "https://soulbackend.herokuapp.com";
     const chart = () =>{
         let odId = [];
         let odName = [];

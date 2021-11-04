@@ -61,7 +61,7 @@ const Home = (props) => {
   const categoryLength = category.categories.length;
   const productLength = product.products.length;
   const orderLength = order.orders.length;
-
+  const baseUrl =  "https://soulbackend.herokuapp.com";
   console.log(category, product, order, "this state");
 
   let chartInstance = null;
