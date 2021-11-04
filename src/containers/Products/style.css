@@ -123,17 +123,6 @@
    margin-right: -3px;
     
 }
-@media screen and (max-width: 765px) {
-    
-    .flexRow1 {
-        margin-left: 0;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    .select-container {
-        width: 100%;
-    }
-}
 .product-card-b{
     position: relative;
     display: -webkit-box;

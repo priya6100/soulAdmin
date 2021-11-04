@@ -3,11 +3,6 @@
     display: flex;
     margin: 5px auto 20px;
 }
-@media screen and (max-width: 765px) {
-    .orderTrack {
-        width: 100%;
-    }
-}
 .orderStatus{
     width: 33.33%;
     height: 5px;

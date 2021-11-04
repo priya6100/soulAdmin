@@ -32,11 +32,6 @@ const Header = (props) => {
             <IoIosPower />
           </span>
         </li>
-        <li className="nav-item">
-          <NavLink to="/signup" className="nav-link">
-            <IoIosPerson /> Signup
-          </NavLink>
-        </li>
       </Nav>
     );
   };
@@ -49,6 +44,11 @@ const Header = (props) => {
         <li className="nav-item">
           <NavLink to="/signin" className="nav-link">
             <IoIosLogIn /> Signin
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/signup" className="nav-link">
+            <IoIosPerson /> Signup
           </NavLink>
         </li>
       </Nav>

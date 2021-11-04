@@ -16,7 +16,7 @@ const BarChart = (props) => {
     const chart = () =>{
         let odId = [];
         let odName = [];
-        axios.post(`https://soulbackend.herokuapp.com/api/initialdata`)
+        axios.post(`http://localhost:7000/api/initialdata`)
         .then(res =>{
             console.log(res, ">>res");
             for(const dataObj of res.data.orders){
